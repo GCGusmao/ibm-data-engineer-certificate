@@ -16,6 +16,7 @@ class Vehicle:
         print("Mileage:", self.mileage)
         print("Seating Capacity:", self.seating_capacity)
 
+
 # Creating objects of the Vehicle class
 vehicle1 = Vehicle(200, 20)
 vehicle1.assign_seating_capacity(5)
