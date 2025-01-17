@@ -2,9 +2,11 @@ import glob
 import pandas as pd
 import xml.etree.ElementTree as ET
 from datetime import datetime
+from pathlib import Path
 
-log_file = "etl_project/log_file.txt"
-target_file = "etl_project/transformed_data.csv"
+PROJECT_PATCH = Path(__file__).parent
+log_file = PROJECT_PATCH / "log_file.txt"
+target_file = PROJECT_PATCH / "transformed_data.csv"
 
 
 # Function how extract data from CSV file.
